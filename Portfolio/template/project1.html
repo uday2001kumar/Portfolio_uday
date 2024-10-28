@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h2>College Management System (In Progress)</h2>
+    <p>The <strong>College Management System</strong> is a comprehensive web-based application designed to streamline various administrative processes within the university. It facilitates student enrollment, course management, and more.</p>
+
+    <h3>Key Features:</h3>
+    <ul class="features">
+        <li><strong>User Authentication:</strong> Secure login for students, faculty, and administration.</li>
+        <li><strong>Course Management:</strong> Easy creation and modification of courses, with enrollment capabilities.</li>
+    </ul>
+
+    <div class="github-link">
+        <strong>GitHub Repository:</strong> 
+        <a href="https://github.com/uday2001kumar/collegemanagementsystem2024" target="_blank">
+            College Management System
+        </a>
+    </div>
+</div>
+<style>
+    .container {
+        max-width: 800px;
+        margin:100px 0px 0px 250px ;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+        color: #333;
+    }
+    .features {
+        margin-top: 10px;
+    }
+    .features li {
+        margin-bottom: 8px;
+    }
+    .github-link {
+        margin-top: 15px;
+    }
+    .github-link a {
+        color: #0366d6;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}

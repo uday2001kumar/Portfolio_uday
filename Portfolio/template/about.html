@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+  {% block content%}
+  <div class="about_container">
+    <img src="{% static 'images/uday2.jpeg' %}" alt="udayimage" class="about_img">
+    <div class="msg_content">
+            <p> I am motivated and freshly graduated.I completed Master's in Computer Applications with 
+            distinction from university of PG college(OU) in Secunderabad.Along with Master i have learn Python,Django,HTML,CSS,JavaScript,
+            MySQL and React(Basics) from Q-edge Technologies.</p>
+            <p> I had received a Python Full-Stack Programming Certification
+            from Q-edge Technologies.I  communicates effectively and works collaboratively, which allows him to 
+            contribute meaningfully in team environments.</p>
+    </div>
+  </div>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .about_container{
+      {% comment %} background-color: red; {% endcomment %}
+      display:flex;
+      align-items:center; 
+    }
+    .about_img{
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      width:400px;
+      height:400px;
+      margin:50px 0px 0px 50px;
+      border-radius:50%;
+    }
+    .msg_content{
+      background-color:white;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      border-radius:10px;
+      font-size:28px;
+      padding:10px;
+      text-align: justify;
+      font-family: "Times New Roman", serif;          
+      margin-top:60px;
+      margin-left:20px;
+      margin-right:20px;
+    }
+  </style>
+  {% endblock content%}

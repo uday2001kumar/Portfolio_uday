@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <title>{% block title %}Portfolio {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+  <body>
+    <div class="contianer">
+      {% include "nav.html"%}
+      {% block content%}
+
+      {% endblock content%}
+
+    </div>
+  </body>
+</html>

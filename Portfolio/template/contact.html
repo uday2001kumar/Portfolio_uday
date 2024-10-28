@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+  {% block content%}
+<div class="contact_container">
+    <div class="contact_info">
+        <h1 style="text-align:center">Contact Dertails</h1>
+        <p><strong>Email:</strong> <a href="mailto:challagiriudaykumar@gmail.com">challagiriudaykumar@gmail.com</a></p>
+        <p><strong>Phone:</strong> 9603315187</p>
+        <p><strong>Address:</strong> 10-1-627/3, Hyderabad 500004, India</p>
+    </div>
+    <div class="images">
+        <a href="https://wa.me/+919603315187"><img src="{% static 'images/whatsapp.jpeg' %}" alt=whatsapp_image" class="whatsapp_img"></a>
+    </div>
+</div>
+</div>
+<style>
+    .contact_container{
+        margin:150px 400px 50px 400px;
+        background-color:white;
+        font-size:17px;
+        border-radius:5px;  
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    .contact_info{
+        margin-left:50px;
+        margin-right:50px;
+        margin-bottom:20px;
+        padding:10px 20px 10px 20px;
+    }
+    .whatsapp_img{
+        margin-top:-30px;
+        width:80px;
+        height:80px;
+    }
+    .gmail_img{
+        width:60px;
+        height:60px;
+    }
+    .images{
+        text-align:center;
+    }
+</style>
+{% endblock %}

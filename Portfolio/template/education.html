@@ -1,0 +1,76 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1>Academic Profile</h1>
+
+    <div class="education">
+        <h2>Master of Computer Applications (MCA)</h2>
+        <p><span>Institution:</span> Osmania University</p>
+        <p><span>Percentage:</span> 78%</p>
+    </div>
+    <div class="separator"></div>
+
+    <div class="education">
+        <h2>Bachelor of Science (B.Sc)</h2>
+        <p><span>Institution:</span> KRR Arts & Science College (MGU), Kodad</p>
+        <p><span>Percentage:</span> 95%</p>
+    </div>
+    <div class="separator"></div>
+
+    <div class="education">
+        <h2>Intermediate</h2>
+        <p><span>Institution:</span> Deeksha Junior College, Nandigama</p>
+        <p><span>Percentage:</span> 94%</p>
+    </div>
+    <div class="separator"></div>
+
+    <div class="education">
+        <h2>SSC</h2>
+        <p><span>Institution:</span> Z.P.H. School, Ithavarma</p>
+        <p><span>Percentage:</span> 87%</p>
+    </div>
+</div>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #444;
+}
+.education {
+    margin: 20px 0;
+}
+.education h2 {
+    font-size: 1.5em;
+    color: #444;
+}
+.education p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #555;
+}
+.education span {
+    font-weight: bold;
+    color: #444;
+}
+.separator {
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+</style>
+{% endblock %}
